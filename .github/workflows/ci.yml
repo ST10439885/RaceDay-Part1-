@@ -1,0 +1,40 @@
+name: RaceDay CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check repository structure
+        run: |
+          echo "Checking RaceDay repository structure..."
+
+          test -d docs || (echo "ERROR: docs folder is missing" && exit 1)
+          test -f README.md || (echo "ERROR: README.md is missing" && exit 1)
+
+          echo "Checking required documentation files..."
+
+          test -f docs/ERD.png || (echo "ERROR: ERD.png is missing" && exit 1)
+          test -f docs/API-Endpoint-Plan.md || (echo "ERROR: API-Endpoint-Plan.md is missing" && exit 1)
+          test -f docs/RaceDay.sql || (echo "ERROR: RaceDay.sql is missing" && exit 1)
+
+          echo "All required files are present."
+          echo "RaceDay CI/CD validation successful!"
+
+      - name: Display repository contents
+        run: |
+          echo "Repository structure:"
+          find . -maxdepth 3 -type f | sort
