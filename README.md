@@ -1,6 +1,6 @@
-# 🏃 RaceDay – Event Management System
+ 🏃 RaceDay – Event Management System
 
-## 📌 Project Overview
+ 📌 Project Overview
 
 RaceDay is a full-stack web-based event management system designed for the South African road running, walking and cycling community.
 
@@ -187,7 +187,7 @@ The stored image URL can then be used by the MVC application to display the imag
 
 ---
 
-# 🖥️ MVC Web Application
+ 🖥️ MVC Web Application
 
 The MVC application provides the user interface for RaceDay.
 
@@ -229,7 +229,7 @@ Before running the project, install:
 * Docker Desktop
 * Git
 
-### Steps
+## Steps
 
 1. Clone the repository.
 2. Open the solution in Visual Studio.
@@ -242,9 +242,9 @@ Before running the project, install:
 9. Test the API through Swagger.
 10. Test the MVC application through the browser.
 
----
 
-# 🎥 Video Presentation
+
+ 🎥 Video Presentation
 
 An unlisted YouTube video demonstrating the project is provided below.
 
@@ -253,9 +253,9 @@ An unlisted YouTube video demonstrating the project is provided below.
 
 The video demonstrates the application, explains the project structure and shows the implemented functionality.
 
----
 
-# 📚 Documentation
+
+ 📚 Documentation
 
 The `/docs` folder contains the planning documentation for the RaceDay system:
 
@@ -263,9 +263,9 @@ The `/docs` folder contains the planning documentation for the RaceDay system:
 * API Endpoint Plan
 * SQL Database Script
 
----
 
-# 👨‍💻 Author
+
+ 👨‍💻 Author
 
 **Student Name:** Vhugala Thobakgale
 
@@ -275,8 +275,7 @@ The `/docs` folder contains the planning documentation for the RaceDay system:
 
 **Module Code:** PROG6212
 
----
 
-# ⚠️ AI Usage Disclosure
+ ⚠️ AI Usage Disclosure
 
 AI tools were used during the development process for assistance with planning, troubleshooting, explanations and/or proofreading. The final implementation was reviewed and understood by the student.
