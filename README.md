@@ -54,28 +54,17 @@ Role-based access is enforced so that users can only access functionality approp
 # 📁 Project Structure
 
 ```text
-RaceDay/
+RaceDay
 │
-├── docs/
-│   ├── ERD.png
-│   ├── API-Endpoint-Plan.md
-│   └── RaceDay.sql
+├── .github
+│   └── workflows
+│       └── ci.yml
 │
-├── RaceDay.API/
-│   └── ASP.NET Core Web API
-│
-├── RaceDay.Tests/
-│   └── Unit Tests
-│
-├── RaceDay.MVC/
-│   └── ASP.NET Core MVC Application
-│
-├── .github/
-│   └── workflows/
-│       └── dotnet.yml
-│
-├── Dockerfile
-└── README.md
+├── API_Endpoint_Plan (1).pdf
+├── README.md
+├── RaceDay_ERD.png
+├── Recording 2026-09-04 181354 Part 1.mp4
+└── SQL Part one.sql
 ```
 
 ---
@@ -279,3 +268,7 @@ The `/docs` folder contains the planning documentation for the RaceDay system:
  ⚠️ AI Usage Disclosure
 
 AI tools were used during the development process for assistance with planning, troubleshooting, explanations and/or proofreading. The final implementation was reviewed and understood by the student.
+
+<img width="1315" height="565" alt="GitHub" src="https://github.com/user-attachments/assets/d34dc824-80a4-4fc3-992d-77a7fada751f" />
+
+
