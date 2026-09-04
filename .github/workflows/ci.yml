@@ -18,23 +18,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check repository structure
+      - name: Check required files
         run: |
-          echo "Checking RaceDay repository structure..."
+          echo "Checking RaceDay project files..."
 
-          test -d docs || (echo "ERROR: docs folder is missing" && exit 1)
           test -f README.md || (echo "ERROR: README.md is missing" && exit 1)
+          test -f "RaceDay_ERD.png" || (echo "ERROR: RaceDay_ERD.png is missing" && exit 1)
+          test -f "API_Endpoint_Plan (1).pdf" || (echo "ERROR: API_Endpoint_Plan (1).pdf is missing" && exit 1)
+          test -f "SQL Part one.sql" || (echo "ERROR: SQL Part one.sql is missing" && exit 1)
 
-          echo "Checking required documentation files..."
-
-          test -f docs/ERD.png || (echo "ERROR: ERD.png is missing" && exit 1)
-          test -f docs/API-Endpoint-Plan.md || (echo "ERROR: API-Endpoint-Plan.md is missing" && exit 1)
-          test -f docs/RaceDay.sql || (echo "ERROR: RaceDay.sql is missing" && exit 1)
-
-          echo "All required files are present."
-          echo "RaceDay CI/CD validation successful!"
+          echo "All required RaceDay files are present."
+          echo "CI/CD validation successful!"
 
       - name: Display repository contents
         run: |
-          echo "Repository structure:"
+          echo "Repository contents:"
           find . -maxdepth 3 -type f | sort
